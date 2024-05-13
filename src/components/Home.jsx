@@ -3,7 +3,7 @@ import "animate.css";
 function Home() {
   return (
     <>
-      <div className="md:flex flex flex-wrap justify-evenly mt-20  items-center">
+      <div className="md:flex flex flex-wrap gap-20 justify-evenly mt-20  items-center">
         <div className="animate__animated animate__backInLeft">
           <h1 className="font-bold font-poppins">New in</h1>
           <p className="font-bold text-2xl font-poppins">
