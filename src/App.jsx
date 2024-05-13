@@ -80,7 +80,12 @@ function App() {
       ))}
 
       <Banner />
-
+      <div className="mt-16">
+        <hr className="w-24 mx-auto rounded h-1 bg-black" />
+        <h1 className="font-bold font-poppins text-center text-2xl">New 
+        Collection
+        </h1>
+      </div>
       <Collection />
     </>
   );
