@@ -6,7 +6,7 @@ function Diskon() {
       <div className="mb-20 mx-auto">
         <div
           style={{
-            backgroundImage: `url(../src/assets/img/offert.png)`,
+            backgroundImage: `url(/offert.png)`,
             backgroundRepet: `no-repeat`,
           }}
           className="w-80 h-36 mx-auto bg-stone-300 bg-no-repeat bg-contain rounded-lg bg-[240px]"

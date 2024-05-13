@@ -6,7 +6,7 @@ function Banner() {
       <div className="flex flex-wrap gap-6">
         <div
           className="w-80 h-36 mx-auto bg-stone-300 bg-no-repeat bg-contain rounded-lg bg-[200px] animate__animated animate__bounceIn"
-          style={{ backgroundImage: `url(../src/assets/img/collection1.png)` }}
+          style={{ backgroundImage: `url(/collection1.png)` }}
         >
           <h1 className="font-poppins font-semibold p-3 m-3">Nike</h1>
           <p className="font-poppins m-3 p-3 font-semibold -mt-6">
@@ -20,7 +20,7 @@ function Banner() {
         </div>
         <div
           className="w-80 h-36 mx-auto bg-stone-300 bg-no-repeat bg-contain rounded-lg bg-[180px] animate__animated animate__bounceIn"
-          style={{ backgroundImage: `url(../src/assets/img/collection2.png)` }}
+          style={{ backgroundImage: `url(/collection2.png)` }}
         >
           <h1 className="font-poppins font-semibold p-3 m-3">Adidas</h1>
           <p className="font-poppins m-3 p-3 font-semibold -mt-6">
