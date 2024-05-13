@@ -14,7 +14,7 @@ function Home() {
           </div>
         </div>
         <div className="animate__animated animate__backInRight">
-          <img src="../public/home_img.png" className="w-80 h-80 hover:scale-110 transition-all ease-in-out  duration-300" />
+          <img src="/home_img.png" className="w-80 h-80 hover:scale-110 transition-all ease-in-out  duration-300" />
         </div>
       </div>
     </>
