@@ -13,7 +13,7 @@ function Home() {
             <button className="bg-sky-500 text-white font-poppins font-semibold py-2 px-4 rounded-lg hover:bg-sky-300 transition-all ease-in-out duration-300">Get Now</button>
           </div>
         </div>
-        <div className="animate__animated animate__backInRight">
+        <div className="animate__animated animate__backInRight mb-10">
           <img src="/home_img.png" className="w-80 h-80 hover:scale-110 transition-all ease-in-out  duration-300" />
         </div>
       </div>
