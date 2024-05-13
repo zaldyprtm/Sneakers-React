@@ -8,6 +8,7 @@ import Woman from "./components/Women";
 import DataWomen from "./components/DataWomen";
 import Banner from "./components/Banner";
 import Collection from "./components/Collection";
+import BannerBottom from "./components/BannerBottom";
 import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import AOS from "aos";
@@ -87,6 +88,8 @@ function App() {
         </h1>
       </div>
       <Collection />
+
+      <BannerBottom />
     </>
   );
 }
