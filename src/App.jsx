@@ -13,6 +13,7 @@ import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   console.log(Data);
@@ -22,6 +23,7 @@ function App() {
   }, []);
   return (
     <>
+    <Navbar />
       <div className="App mb-40">
         <Home />
       </div>
