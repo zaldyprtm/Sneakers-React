@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Home from "./components/Home";
 import Data from "./components/Data";
@@ -8,12 +8,17 @@ import Woman from "./components/Women";
 import DataWomen from "./components/DataWomen";
 import Banner from "./components/Banner";
 import Collection from "./components/Collection";
-import "animate.css/animate.compat.css"
-import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.compat.css";
+import ScrollAnimation from "react-animate-on-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   console.log(Data);
   console.log(DataWomen);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="App mb-40">
@@ -27,11 +32,12 @@ function App() {
           Our Content
         </h1>
       </div>
-      <div className="mx-auto m-6 p-6 flex flex-wrap items-center justify-center mb-10 animated__animate animate__backInRight">
+      <div className="mx-auto m-6 p-6 flex flex-wrap items-center justify-center mb-10">
         {Data.map((item) => (
           <div
+            data-aos="zoom-out-down"
             key={item.id}
-            className="bg-stone-200 rounded-lg mb-10 w-64 h-56 animate_animated animate__backInRight"
+            className="bg-stone-200 rounded-lg mb-10 w-64 h-56 "
           >
             <img
               src={item.image}
@@ -47,25 +53,34 @@ function App() {
           </div>
         ))}
       </div>
-      <ScrollAnimation animateIn="fadeIn">
 
-      <Diskon />
+      <ScrollAnimation animateIn="fadeIn">
+        <Diskon />
       </ScrollAnimation>
 
       <Woman />
 
       {DataWomen.map((item) => (
         <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
           key={item.id}
           className="bg-stone-200 rounded-lg mb-10 w-64 h-56 animate_animated animate__backInRight mx-auto mt-5 hover:scale-110 hover:shadow-lg transition-all ease-in-out  duration-300"
         >
-          <img src={item.image} alt={item.image} className="w-52 animate__animated animate__bounceInUp mx-auto " />
+          <img
+            src={item.image}
+            alt={item.image}
+            className="w-52 animate__animated animate__bounceInUp mx-auto "
+          />
           <p className="font-poppins font-semibold text-center">{item.name}</p>
-          <p className="font-poppins font-semibold text-center text-sm mt-2">{item.price}</p>
+          <p className="font-poppins font-semibold text-center text-sm mt-2">
+            {item.price}
+          </p>
         </div>
       ))}
 
       <Banner />
+
       <Collection />
     </>
   );

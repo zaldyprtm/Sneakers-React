@@ -1,11 +1,17 @@
 import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Banner() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="flex flex-wrap gap-6">
-        <div
-          className="w-80 h-36 mx-auto bg-stone-300 bg-no-repeat bg-contain rounded-lg bg-[200px] animate__animated animate__bounceIn"
+        <div data-aos="fade-right" 
+          className="w-80 h-36 mx-auto bg-stone-300 bg-no-repeat bg-contain rounded-lg bg-[200px]"
           style={{ backgroundImage: `url(/collection1.png)` }}
         >
           <h1 className="font-poppins font-semibold p-3 m-3">Nike</h1>
@@ -18,8 +24,8 @@ function Banner() {
             </button>
           </div>
         </div>
-        <div
-          className="w-80 h-36 mx-auto bg-stone-300 bg-no-repeat bg-contain rounded-lg bg-[180px] animate__animated animate__bounceIn"
+        <div data-aos="fade-left" 
+          className="w-80 h-36 mx-auto bg-stone-300 bg-no-repeat bg-contain rounded-lg bg-[180px]"
           style={{ backgroundImage: `url(/collection2.png)` }}
         >
           <h1 className="font-poppins font-semibold p-3 m-3">Adidas</h1>
