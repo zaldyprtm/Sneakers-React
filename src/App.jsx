@@ -21,7 +21,7 @@ function App() {
       </div>
 
       {/* <Data /> */}
-      <div className="">
+      <div className="mt-10">
         <hr className="w-24 mx-auto rounded h-1 bg-black" />
         <h1 className="font-bold font-poppins text-center text-2xl">
           Our Content
